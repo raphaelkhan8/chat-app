@@ -10,9 +10,9 @@
 <body>
 
     <div class="chat">
-        <div id="sidebar" class="chat__sidebar">
 
-        </div>
+        <div id="sidebar" class="chat__sidebar"></div>
+
         <div class="chat__main">
             <div id="messages" class="chat__messages"></div>
 
@@ -48,6 +48,9 @@
     </script>
 
     <script id="sidebar-template" type="text/html">
+        <form class ="home__button" action="/">
+            <input type="submit" value="Leave the Room" />
+        </form>
         <h2 class="room-title">{{room}}</h2>
         <h3 class="list-title">Users</h3>
         <ul class="users">
